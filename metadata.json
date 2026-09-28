@@ -1,0 +1,6 @@
+{
+  "name": "Hole Shot Repair - Small Engine & Powersports Service",
+  "description": "Hole Shot Repair in Oakland, MD. Expert small engine repair, motorcycle & ATV service, live RFQ quoting, manager controls, and genuine customer reviews.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
