@@ -78,6 +78,9 @@ export const GallerySection: React.FC<GallerySectionProps> = ({ photos, onOpenMa
                   alt={photo.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    (e.currentTarget as HTMLImageElement).src = '/images/hero_engine_workshop.jpg';
+                  }}
                 />
               </div>
 

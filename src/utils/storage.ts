@@ -58,7 +58,16 @@ export const StorageService = {
   getServices: (): ServiceItem[] => loadFromStorage(STORAGE_KEYS.SERVICES, INITIAL_SERVICES),
   saveServices: (services: ServiceItem[]) => saveToStorage(STORAGE_KEYS.SERVICES, services),
 
-  getGallery: (): GalleryPhoto[] => loadFromStorage(STORAGE_KEYS.GALLERY, INITIAL_GALLERY),
+  getGallery: (): GalleryPhoto[] => {
+    const photos = loadFromStorage(STORAGE_KEYS.GALLERY, INITIAL_GALLERY);
+    return photos.map((p) => {
+      let url = p.imageUrl;
+      if (url.includes('/src/assets/images/')) {
+        url = url.replace('/src/assets/images/', '/images/');
+      }
+      return { ...p, imageUrl: url };
+    });
+  },
   saveGallery: (gallery: GalleryPhoto[]) => saveToStorage(STORAGE_KEYS.GALLERY, gallery),
 
   getReviews: (): ReviewItem[] => loadFromStorage(STORAGE_KEYS.REVIEWS, INITIAL_REVIEWS),

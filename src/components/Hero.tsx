@@ -92,10 +92,14 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRfq }) => {
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-2xl overflow-hidden border border-neutral-800 shadow-2xl bg-neutral-900 group">
               <img
-                src="/src/assets/images/hero_engine_workshop_1790566895597.jpg"
+                src="/images/hero_engine_workshop.jpg"
                 alt="Hole Shot Repair small engine and powersports workshop station"
                 className="w-full h-[380px] sm:h-[440px] object-cover transition-transform duration-700 group-hover:scale-105"
                 referrerPolicy="no-referrer"
+                onError={(e) => {
+                  // Fallback in case of path issue
+                  (e.currentTarget as HTMLImageElement).src = '/src/assets/images/hero_engine_workshop_1790566895597.jpg';
+                }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/40 to-transparent" />
               

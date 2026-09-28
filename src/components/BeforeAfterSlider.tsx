@@ -58,10 +58,13 @@ export const BeforeAfterSlider: React.FC = () => {
             {/* After Image (Right / Base) */}
             <div className="absolute inset-0">
               <img
-                src="/src/assets/images/service_motorcycle_trail_1790566922661.jpg"
+                src="/images/service_motorcycle_trail.jpg"
                 alt="After: Clean rebuilt Honda CT110 and tuned engine running smooth"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
+                onError={(e) => {
+                  (e.currentTarget as HTMLImageElement).src = '/src/assets/images/service_motorcycle_trail_1790566922661.jpg';
+                }}
               />
               <div className="absolute bottom-6 right-6 px-3.5 py-1.5 rounded-lg bg-neutral-950/80 backdrop-blur-md border border-emerald-500/40 text-emerald-400 text-xs font-semibold flex items-center gap-1.5 shadow-lg">
                 <Sparkles className="w-3.5 h-3.5 text-emerald-400" />
@@ -76,11 +79,14 @@ export const BeforeAfterSlider: React.FC = () => {
             >
               <div className="relative w-full h-full">
                 <img
-                  src="/src/assets/images/service_carburetor_rebuild_1790566910493.jpg"
+                  src="/images/service_carburetor_rebuild.jpg"
                   alt="Before: Disassembled gummed-up carburetor and seized cylinder"
                   className="absolute inset-0 w-full h-full object-cover filter contrast-110 brightness-90 grayscale-[35%]"
                   style={{ width: containerRef.current ? `${containerRef.current.clientWidth}px` : '100%' }}
                   referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    (e.currentTarget as HTMLImageElement).src = '/src/assets/images/service_carburetor_rebuild_1790566910493.jpg';
+                  }}
                 />
                 <div className="absolute bottom-6 left-6 px-3.5 py-1.5 rounded-lg bg-neutral-950/80 backdrop-blur-md border border-amber-500/40 text-amber-400 text-xs font-semibold flex items-center gap-1.5 shadow-lg">
                   <AlertCircle className="w-3.5 h-3.5 text-amber-400" />

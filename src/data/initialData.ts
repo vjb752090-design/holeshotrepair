@@ -101,7 +101,7 @@ export const INITIAL_GALLERY: GalleryPhoto[] = [
     id: 'gal-1',
     title: 'Hole Shot Workshop Bays & Engine Stands',
     category: 'Shop Bays',
-    imageUrl: '/src/assets/images/hero_engine_workshop_1790566895597.jpg',
+    imageUrl: '/images/hero_engine_workshop.jpg',
     description: 'Our organized mechanic stations inside Noland Trans World Cycle on E First Ave, Oakland MD.',
     dateAdded: '2026-09-15'
   },
@@ -109,7 +109,7 @@ export const INITIAL_GALLERY: GalleryPhoto[] = [
     id: 'gal-2',
     title: 'Keihin / Mikuni Precision Carburetor Rebuild',
     category: 'Carburetors',
-    imageUrl: '/src/assets/images/service_carburetor_rebuild_1790566910493.jpg',
+    imageUrl: '/images/service_carburetor_rebuild.jpg',
     description: 'Disassembled carburetor components post-ultrasonic bath awaiting new Viton O-rings and OEM jetting.',
     dateAdded: '2026-09-18'
   },
@@ -117,7 +117,7 @@ export const INITIAL_GALLERY: GalleryPhoto[] = [
     id: 'gal-3',
     title: 'Restored Vintage Honda CT110 Trail Bike',
     category: 'Vintage Trail',
-    imageUrl: '/src/assets/images/service_motorcycle_trail_1790566922661.jpg',
+    imageUrl: '/images/service_motorcycle_trail.jpg',
     description: 'Full engine and transmission overhaul on a classic Honda CT110 post-diagnostic by Zach and crew.',
     dateAdded: '2026-09-20'
   },
@@ -125,7 +125,7 @@ export const INITIAL_GALLERY: GalleryPhoto[] = [
     id: 'gal-4',
     title: 'Shopfront at 7 E First Ave, Oakland MD',
     category: 'Location',
-    imageUrl: '/src/assets/images/exterior_oakland_shop_1790566937041.jpg',
+    imageUrl: '/images/exterior_oakland_shop.jpg',
     description: 'Convenient mountain town location in Oakland, MD. Easy drop-off and trailer parking available.',
     dateAdded: '2026-09-22'
   }

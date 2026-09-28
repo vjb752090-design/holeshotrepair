@@ -108,10 +108,13 @@ export const LocationHours: React.FC = () => {
             {/* Shop Exterior Photo */}
             <div className="rounded-2xl overflow-hidden border border-neutral-800 bg-neutral-900">
               <img
-                src="/src/assets/images/exterior_oakland_shop_1790566937041.jpg"
+                src="/images/exterior_oakland_shop.jpg"
                 alt="Exterior of Hole Shot Repair at 7 E First Ave Oakland MD"
                 className="w-full h-52 object-cover"
                 referrerPolicy="no-referrer"
+                onError={(e) => {
+                  (e.currentTarget as HTMLImageElement).src = '/src/assets/images/exterior_oakland_shop_1790566937041.jpg';
+                }}
               />
               <div className="p-3 bg-neutral-950 text-xs text-neutral-400 flex items-center justify-between">
                 <span>Trailer drop-off &amp; easy truck loading access in front</span>
